@@ -1,1 +1,56 @@
-[{"_name":"Mohamed","_age":"20","_email":"mohamedharoon@gmail.com","_salary":"700","_level":"Jr","_yearsOfExperience":"1","_id":0},{"_name":"Mohamed","_age":"20","_email":"mohamedharoon@gmail.com","_salary":"700","_level":"Jr","_yearsOfExperience":"1","_id":"2"},{"_name":"Mohamed","_age":20,"_email":"mohamedharoon@gmail.com","_salary":400,"_level":"Jr","_yearsOfExperience":1,"_id":4},{"_name":"Ahmed","_age":25,"_email":"ahmed@gmail.com","_salary":500,"_level":"Jr","_yearsOfExperience":1,"_id":5},{"_name":"Yousef","_age":26,"_email":"Yousef@gmail.com","_salary":900,"_level":"Mid-level","_yearsOfExperience":1,"_id":6},{"_name":"Hanna","_age":26,"_email":"hanna@gmail.com","_salary":700,"_level":"Sr","_yearsOfExperience":10,"_id":7}]
+[
+  {
+    "_name": "Mohamed",
+    "_age": "20",
+    "_email": "mohamedharoon@gmail.com",
+    "_salary": "700",
+    "_level": "Jr",
+    "_yearsOfExperience": "1",
+    "_id": 0
+  },
+  {
+    "_name": "Mohamed",
+    "_age": "20",
+    "_email": "mohamedharoon@gmail.com",
+    "_salary": "700",
+    "_level": "Jr",
+    "_yearsOfExperience": "1",
+    "_id": "2"
+  },
+  {
+    "_name": "Mohamed",
+    "_age": 20,
+    "_email": "mohamedharoon@gmail.com",
+    "_salary": 400,
+    "_level": "Jr",
+    "_yearsOfExperience": 1,
+    "_id": 4
+  },
+  {
+    "_name": "Ahmed",
+    "_age": 25,
+    "_email": "ahmed@gmail.com",
+    "_salary": 500,
+    "_level": "Jr",
+    "_yearsOfExperience": 1,
+    "_id": 5
+  },
+  {
+    "_name": "Yousef",
+    "_age": 26,
+    "_email": "Yousef@gmail.com",
+    "_salary": 900,
+    "_level": "Mid-level",
+    "_yearsOfExperience": 1,
+    "_id": 6
+  },
+  {
+    "_name": "Hanna",
+    "_age": 26,
+    "_email": "hanna@gmail.com",
+    "_salary": 700,
+    "_level": "Sr",
+    "_yearsOfExperience": 10,
+    "_id": 7
+  }
+]

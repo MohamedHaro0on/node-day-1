@@ -2,7 +2,7 @@
   "name": "postjs",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "Task 1 for the first day at Node Js Course in ITI ",
   "main": "index.js",
   "dependencies": {
     "commander": "^13.1.0"
