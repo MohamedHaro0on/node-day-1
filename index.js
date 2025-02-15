@@ -78,11 +78,9 @@ program
       let filterCondition = {};
       let employeesString = ``;
 
-      console.log("this is the options : ", options);
       Object.keys(options).map((key) => {
         filterCondition[key] = options[key];
       });
-      console.log("this is the filter object : ", filterCondition);
       let filteredEmployees = employees.filter((employee) => {
         return Object.keys(filterCondition).every((key) => {
           return String(employee[key]) === String(filterCondition[key]);
@@ -90,11 +88,12 @@ program
       });
 
       employeesString += filteredEmployees
-        .map(
-          ({ name, age, id, level, salary, email }) =>
-            `id : ${id} | name : ${name} | age : ${age} | email : ${email} | level : ${level} | salary : ${salary} \n`
-        )
-        .join("");
+        .map((em) => {
+          return Object.keys(em)
+            .map((key) => ` ${key} : ${em[key]} |  `)
+            .join("");
+        })
+        .join("\n");
 
       console.log(employeesString);
     } catch (e) {
@@ -129,17 +128,13 @@ program
   .option("--yearsOfExperience <years>", "Years of experience")
   .action((id, options) => {
     try {
-      console.log("this is the id : ", id);
       let employee = employees.filter((em) => em.id === JSON.parse(id));
       if (employee) {
-        console.log("this is the employee : ", employee);
-        console.log("this is the options : ", options);
         Object.keys(options).map((key) => {
-          employee[key] = options[key];
+          employee[0][key] = options[key];
         });
-        console.log("this is the edited employe : ", employee);
         fs.writeFileSync(filePath, JSON.stringify(employees));
-        console.log("Employee edited successfully:");
+        console.log("Employee edited successfully: L ", employee);
       }
     } catch (e) {
       console.error("Error adding employee:", e.message);
